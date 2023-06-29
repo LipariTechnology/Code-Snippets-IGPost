@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="login-card">
+      <!-- aggiungi l'immagine che preferisci -->
+      <img
+        src="img_profile"
+      />
+      <h2>Sign Up</h2>
+      <h3>Enter your credentials</h3>
+      <form class="login-form">
+        <div class="username">
+          <input
+            autocomplete="off"
+            spellcheck="false"
+            class="control"
+            type="email"
+            placeholder="Email"
+            value="user@liparipeople.com"
+          />
+          <div id="spinner" class="spinner"></div>
+        </div>
+        <input
+          spellcheck="false"
+          class="control"
+          id="password"
+          type="password"
+          placeholder="Password"
+          onkeyup="handleChange()"
+        />
+        <div id="bars">
+          <div></div>
+        </div>
+        <div class="strength" id="strength"></div>
+        <button class="control" type="button">JOIN NOW</button>
+      </form>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
